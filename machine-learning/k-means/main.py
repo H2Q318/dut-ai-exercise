@@ -49,8 +49,8 @@ class Kmean:
 
 
 if __name__ == '__main__':
-    X = np.array([[1.5, 6], [3, 4.5], [2.25, 6], [6, 1.5],
-                 [7.5, 3], [6, 7.5], [4.5, 9], [4.5, 6]])
+    X = np.array([[0, 1, 1], [1, 1, 0], [2, 2, 0],
+                 [0, 1, 2], [2, 2, 2], [2, 3, 0]])
     kmean = Kmean(X, K=3)
     print("centroids: \n", kmean.centroids)
     print("Point: ", end='')

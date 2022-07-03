@@ -77,6 +77,8 @@ if __name__ == '__main__':
     epsilon = .05
     d = Xbar.shape[0]
     w_init = np.random.randn(d, 1)
+    print('w: ', w_init)
+    print('xbar: ', Xbar)
     w = my_logistic_sigmoid_regression(Xbar, y, w_init, epsilon)
     print(w[-1].T)
     print(sigmoid(np.dot(w[-1].T, Xbar)))
